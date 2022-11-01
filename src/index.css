@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*size pc-(2000), tb-(870) mo-(375)*/
+
+ /* reset */
+ *{margin: 0;padding: 0;border: 0;outline-style: none;box-sizing: border-box;}
+ html{-webkit-tap-highlight-color:transparent !important;-webkit-text-size-adjust: none;-webkit-appearance: none;}
+ html{overflow-x: hidden;-webkit-touch-callout:none;}/* -webkit-user-select:none; 모바일 드래그 막기 */
+ body{min-width: 320px;max-width: 100%;font-family: 'Noto Sans KR', sans-serif;color: #000000;} /* 맞는 폰트로 변경 해줘야함 */
+ ul,ol,li,dl,dd,dt,input,h1,h2,h3,h4,h5,h6,p,b,input,button,textarea,fieldset,legend,td,th{margin:0px;padding:0px;font-weight:normal;word-break:keep-all}
+ li{list-style:none}
+ table,th,td{border-collapse: collapse;/*border-spacing: 0;*/}
+ input,textarea,button,select{font-family:'Noto Sans KR', sans-serif;color: #000000;}
+ input{-webkit-appearance: none;-webkit-border-radius: 0;border-radius: 0;}
+ input[type=text]::-ms-clear, 
+ input[type=tel]::-ms-clear{display: none;}
+ input[type="number"]::-webkit-outer-spin-button,
+ input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0;}
+ select{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+ select::-ms-expand{display: none;}/* IE 10, 11의 네이티브 화살표 숨기기 */
+ button{border: none;background: none;cursor: pointer;-webkit-transform: translate3d(0,0,0);outline: none;}
+ button{overflow:visible\9}	/* button fix for ie8 */
+ label{cursor: pointer;}
+ label img{pointer-events: none;}
+ input::-webkit-input-placeholder{color:#999}
+ input::-moz-placeholder{color:#999}
+ input:-moz-placeholder{color:#999}
+ input:-ms-input-placeholder{color:#999}
+ textarea::-webkit-input-placeholder{color:#999}
+ textarea::-moz-placeholder{color:#999}
+ textarea:-moz-placeholder{color:#999}
+ textarea:-ms-input-placeholder{color:#999}
+ input:focus::-webkit-input-placeholder{color:transparent!important}
+ input:focus::-moz-placeholder{color:transparent!important}
+ input:focus:-moz-placeholder{color:transparent!important}
+ input:focus:-ms-input-placeholder{color:transparent!important}
+ textarea:focus::-webkit-input-placeholder{color:transparent!important}
+ textarea:focus::-moz-placeholder{color:transparent!important}
+ textarea:focus:-moz-placeholder{color:transparent!important}
+ textarea:focus:-ms-input-placeholder{color:transparent!important}
+ a{text-decoration: none;color: #242424;}
+ img{display: block;border: 0;width: 100%;}
+
+ /* temp */
+ body::after{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url('');z-index: -1;opacity: 0.5;}
+
+/* Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Spoqa Han Sans Neo */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/*
+    Nunito Sans
+    Extra-light 200 Light 300 Regular 400 Semi-bold 600 Bold 700 Extra-bold 800 Black 900
+
+    Poppins
+    Thin 100 Extra-light 200 Light 300 Regular 400 Semi-bold 600 Bold 700 Extra-bold 800 Black 900
+*/
+
+/* common */
+.ir_text{overflow: hidden;position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);}
+.clearfix:after{content: '';display: block;clear: both;height: 0;visibility: visible;}
+.scrollDisable{height: 100%;min-height: 100%;overflow: hidden !important;touch-action: none;}
+.fw_900{font-weight: 900;}
+.fw_800{font-weight: 800;}
+.fw_700{font-weight: 700;}
+.fw_600{font-weight: 600;}
+.fw_500{font-weight: 500;}
+.fw_400{font-weight: 400;}
+.fw_300{font-weight: 300;}
+.fw_200{font-weight: 200;}
+.fw_100{font-weight: 100;}
+
+.fm_NotoSans{font-family: 'Noto Sans KR', sans-serif;}
+.fm_Poppins {font-family: 'Poppins', sans-serif;}
+.fm_SpoqaHanSansNeo{font-family: 'Spoqa Han Sans Neo', sans-serif; }
+
