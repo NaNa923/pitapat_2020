@@ -27,7 +27,7 @@ const Contact = ({sections}) => {
         <div id={sections[3]}>
             <div className="cont_wrap">
                 <div className="mapBox">
-                    {/* <MapContainer/> */}
+                    <MapContainer/>
                 </div>
                 <div className="contactBox">
                     <div className="co-leftBox">
