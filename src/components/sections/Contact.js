@@ -1,28 +1,28 @@
 import React from "react";
 import MapContainer from "../MapContainer";
 
+const contacdata = [
+    {
+        title: 'LOCATION',
+        description: '서울특별시 마포구 신촌로14길 20 태인빌딩 5층'
+    },
+    {
+        title: 'EMAIL',
+        description: 'webmaster@pitapat.net'
+    },
+    {
+        title: 'CONTACT',
+        description: 'TEL 070-7510-4328'
+    }
+]
+const contacdataList = contacdata.map( (data, index) => <li key={index}>
+        <b>{data.title}</b>
+        <p>{data.description}</p> 
+    </li>
+);
+
 const Contact = ({sections}) => {
 
-    const contacdata = [
-        {
-            title: 'LOCATION',
-            description: '서울특별시 마포구 신촌로14길 20 태인빌딩 5층'
-        },
-        {
-            title: 'EMAIL',
-            description: 'webmaster@pitapat.net'
-        },
-        {
-            title: 'CONTACT',
-            description: 'TEL 070-7510-4328'
-        }
-    ]
-    const contacdataList = contacdata.map( (data, index) => <li key={index}>
-            <b>{data.title}</b>
-            <p>{data.description}</p> 
-        </li>
-    );
-    
     return (
         <div id={sections[3]}>
             <div className="cont_wrap">

@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from "react";
 
 const Ourwork = ({sections}) => {
+    
     const [works, setWorks] = useState([
         {   
             id:1,
@@ -90,12 +91,13 @@ const Ourwork = ({sections}) => {
     const workList = works.map(work =>
         <div className={`works work_${work.id}`} key={work.id}>
             <img src={work.img} alt={work.text}/>
-             <div className="workText">
+            <div className="workText">
                 <p className="subtext">{work.subtext}</p>
                 <p className="text">{work.text}</p>
             </div>
         </div>
     );
+
     return (
         <div id={sections[0]}>
             <div className="cont_wrap">

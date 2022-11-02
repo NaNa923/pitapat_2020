@@ -1,14 +1,14 @@
 import React from "react";
 
+const partners = [1,2,3,4,5,6,7,8,9,10];
+const partnerList = partners.map(partner => 
+    <li key={partner}>
+        <img src={`img/partner${partner}.png`} alt={`partner img${partner}`} />
+    </li>
+);
+
 const Partner = ({sections}) => {
 
-    const partners = [1,2,3,4,5,6,7,8,9,10];
-    const partnerList = partners.map(partner => 
-        <li key={partner}>
-            <img src={`img/partner${partner}.png`} alt={`partner img${partner}`} />
-        </li>
-    );
-    
     return (
         <div id={sections[2]}>
             <div className="cont_wrap">
@@ -21,7 +21,6 @@ const Partner = ({sections}) => {
                         피터패트는 다양한 고객사와 다양한 프로젝트를 성공적으로
                         진행 중입니다.
                     </p>
-                    
                 </div>
                 <div className="contentBox">
                      <ul>{partnerList}</ul> 

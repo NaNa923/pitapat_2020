@@ -61,7 +61,10 @@
 #partner .cont_wrap .textBox .title > .icon {background-image: url('/public/img/partner_icon.png');}
 #partner .cont_wrap .contentBox {width: 925px; margin-top: 46.9px; margin:  0 auto;}
 #partner .cont_wrap .contentBox ul {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%;}
-#partner .cont_wrap .contentBox li {box-sizing: border-box; display: block; width: 184px; height: 144px; vertical-align: middle; padding: 30px 26px 40px; border: 1px solid #ebebeb; border-left: none; }
+
+#partner .cont_wrap .contentBox li {box-sizing: border-box; display: block; width: 184px; height: 144px; padding: 30px 26px 40px; border: 1px solid #ebebeb; border-left: none; }
+#partner .cont_wrap .contentBox li:nth-child(1),
+#partner .cont_wrap .contentBox li:nth-child(6){border-left: 1px solid #ebebeb;}
 #partner .cont_wrap .contentBox img {vertical-align: middle; width: 132px; }
 
 
