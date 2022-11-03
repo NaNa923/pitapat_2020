@@ -10,7 +10,7 @@ const partnerList = partners.map(partner =>
 const Partner = ({sections}) => {
 
     return (
-        <div id={sections[2]}>
+        <div id={sections[2]} className="element" name="section3">
             <div className="cont_wrap">
                 <div className="textBox">
                     <div className="title">

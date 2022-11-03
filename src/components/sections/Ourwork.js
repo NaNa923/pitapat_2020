@@ -1,105 +1,14 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import workData from '../../data/workData.json'
 
 const Ourwork = ({sections}) => {
+
+    let [style,setStyle] = useState({display:''});
+    let [work,setWork] = useState(workData.list2);
     
-    const [works, setWorks] = useState([
-        {   
-            id:1,
-            img:'images/work1.png',
-            subtext:'MOBILE APP RENEWAL',
-            text:'현대해상 굿앤굿'
-        },
-        {
-            id:2,
-            img:'images/work2.png',
-            subtext:'WEBSITE',
-            text:'한화생명 온슈어패밀리'
-        },
-        {
-            id:3,
-            img:'images/work3.png',
-            subtext:'MOBILE APP',
-            text:'GS건설 자이'
-        },
-        {
-            id:4,
-            img:'images/work4.png',
-            subtext:'BLOG WEBSITE',
-            text:'LG디스플레이 블로그'
-        },
-        {
-            id:5,
-            img:'images/work5.png',
-            subtext:'PDP PAGE',
-            text:'LG Solar'
-        },
-        {
-            id:6,
-            img:'images/work6.png',
-            subtext:'WEBSITE',
-            text:'위닉스'
-        },
-        {
-            id:7,
-            img:'images/work7.png',
-            subtext:'CAMPAIGN WEBSITE',
-            text:'허벌라이프 엑스포'
-        },
-        {
-            id:8,
-            img:'images/work8.png',
-            subtext:'WEBSITE',
-            text:'LG화학블로그'
-        }
-    ]);
-
-    //more버튼 누를시 배열추가
-    const onClick = useCallback(
-        () => {
-            const work = [
-                {
-                    id:9,
-                    img:'images/work9.png',
-                    subtext:'WEBSITE',
-                    text:'위니월드'
-                },
-                {
-                    id:10,
-                    img:'images/work10.png',
-                    subtext:'WEBSITE',
-                    text:'대한예수교장로회총회'
-                },
-                {  
-                    id:11,
-                    img:'images/work11.png',
-                    subtext:'WEBSITE',
-                    text:'둘코락스'
-                },
-                {
-                    id:12,
-                    img:'images/work12.png',
-                    subtext:'WEBSITE',
-                    text:'경찰박물관'
-                }
-            ];
-            setWorks(works.concat(work));
-            document.querySelector('.more').style.display ='none'; // more버튼 없애기
-        },
-        [works],
-    );
-
-    const workList = works.map(work =>
-        <div className={`works work_${work.id}`} key={work.id}>
-            <img src={work.img} alt={work.text}/>
-            <div className="workText">
-                <p className="subtext">{work.subtext}</p>
-                <p className="text">{work.text}</p>
-            </div>
-        </div>
-    );
-
     return (
-        <div id={sections[0]}>
+        <div id={sections[0]} className="element" name="section1">
             <div className="cont_wrap">
                 <div className="textBox">
                     <div className="title">
@@ -112,11 +21,34 @@ const Ourwork = ({sections}) => {
                         제공하고 있습니다.
                         <br />
                         2004년 설립이래 다년간의 경험과 노하우를 기반으로 다양한
-                        프로젝트를 성공적으로 수행하는 디지털 에이전시 입니다.
+                        프로젝트를 성공적으로 수행하는 디지털 에이전시 입니다.s
                     </p>
                 </div>
-                <div className="contentBox">{workList}</div>
-                <button className="more" onClick={onClick}>
+                <div className="contentBox">
+                    {
+                        work.map(function(name, index) {
+                            return(
+                                <div className={`works work_${index}`} key={index}>
+                                    <img src={"images/work"+(name.id)+".png"} alt={name.title}/>
+                                    <div className="workText">
+                                        <p className="subtext">{name.category}</p>
+                                        <p className="text">{name.title}</p>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
+                </div>
+                <button className="more" style={style} onClick={()=>{
+                    axios.get('../../data/workData.json')
+                    .then((result)=>{
+                        setWork([...work,...result.data.list1]);
+                        setStyle({display: 'none'});
+                    })
+                    .catch(()=>{
+                        console.log('실패');
+                    })
+                }}>
                     MORE PROJECT
                 </button>
             </div>

@@ -25,7 +25,7 @@ const contacdataList = contacdata.map( (data, index) => <li key={index}>
 const Contact = ({sections}) => {
 
     return (
-        <div id={sections[3]}>
+        <div id={sections[3]} className="element" name="section4">
             <div className="cont_wrap">
                 <div className="mapBox">
                     <MapContainer />
@@ -33,7 +33,7 @@ const Contact = ({sections}) => {
                 <div className="contactBox">
                     <div className="co-leftBox">
                         <h1>CONTACT US</h1>
-                        <button>문의하기</button>
+                        <a href="mailto:webmaster@pitapat.net">문의하기</a>
                     </div>
                     <ul className="co-rightBox">
                         {contacdataList}

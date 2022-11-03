@@ -1,6 +1,6 @@
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({scrollToTop}) => {
     return (
         <footer>
           <div className="leftBox">
@@ -10,7 +10,7 @@ const Footer = () => {
                 </p>
             </div>
             <div className="rightBox">
-                <button></button>   
+                <button onClick={scrollToTop}></button>   
             </div>
         </footer>
     );

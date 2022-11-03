@@ -2,7 +2,7 @@ import React from "react";
 
 const Aboutus = ({sections}) => {
     return (
-        <div id={sections[1]}>
+        <div id={sections[1]} className="element" name="section2">
             <div className="cont_wrap">
                 <div className="textBox">
                     <div className="light">

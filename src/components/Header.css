@@ -4,6 +4,7 @@ header .logo {width: 208px; height: 145px; background:url('/public/images/logo.p
 header .rightBox {display: flex; justify-content:center; align-items: center; gap: 48.7px;} 
 
 header .rightBox li {width: auto; height: 39px; text-align: center; font-weight: 600;  line-height: 39px;} 
+header .rightBox li a {color: #fff;} 
 header .rightBox li:last-child {width: 136px; border: 1px solid #fff;} 
 
 header .menuBox {display: none;}

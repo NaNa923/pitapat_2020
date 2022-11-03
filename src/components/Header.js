@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import styled from "styled-components";
 
+import { Link, Element as scroll} from 'react-scroll';
+
+let pointer = ({cursor:'pointer'});
+
 const HeaderWrap = styled.div`
     display: flex;
     justify-content: space-between;
@@ -12,7 +16,7 @@ const HeaderWrap = styled.div`
     &.hide {
         transform: translateY(-145px);
     }
-    &.colorchange {
+    &.colorchange .rightBox li a {
         color: #161616;
     }
     &.colorchange .rightBox li:last-child {
@@ -29,7 +33,7 @@ const menu = [
 
 const menuList = menu.map((menu, index) => (
     <li className={menu.className} key={index}>
-        {menu.children}
+        <Link style={pointer} activeClass="active" className="menu_link" to={"section"+(index+1)} spy={true} smooth={true} duration={500} >{menu.children}</Link>
     </li>
 ));
 
@@ -46,7 +50,7 @@ const throttle = function (callback, waitTime) {
     };
 };
 
-const Header = () => {
+const Header = ({scrollToTop}) => {
 
     const [hide, setHide] = useState(false);
     const [colorchange, setColorchange] = useState(false);
@@ -58,7 +62,6 @@ const Header = () => {
         const deltaY = pageYOffset - pageY; // 스크롤 움직인 값
         const hide = pageYOffset !== 0 && deltaY >= 0; // 스크롤 움직인 값이 0이상이고 스크롤위치가 0이 아니면 숨기기
         const colorchange = pageYOffset > 1200; // 145이상으로 내려가면 colorchange
-
 
         setHide(hide); // hide값 true, false설정
         setPageY(pageYOffset); // 현재의 페이지scroll값 저장
@@ -75,7 +78,7 @@ const Header = () => {
     return (
         <header>
             <HeaderWrap className={hide ? 'hide' : '' || colorchange ? 'colorchange' : ''}>
-                <div className="leftBox logo"></div>
+                <button style={pointer} className="leftBox logo" onClick={scrollToTop}></button>
                 <ul className="rightBox">{menuList}</ul>
                 <div className="menuBox">
                     <div className="menuIcon"></div>
