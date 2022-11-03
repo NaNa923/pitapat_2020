@@ -17,7 +17,7 @@ function App() {
             <Header/>
             <div id="wrap">
                 <div className="container">
-                    <Main/>
+                    <Main />
                     <Ourwork sections={sections}/>
                     <Aboutus sections={sections}/>
                     <Partner sections={sections}/>

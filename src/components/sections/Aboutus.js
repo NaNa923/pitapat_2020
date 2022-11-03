@@ -6,7 +6,7 @@ const Aboutus = ({sections}) => {
             <div className="cont_wrap">
                 <div className="textBox">
                     <div className="light">
-                        <img src="img/light.png" alt="전구" />
+                        <img src="images/light.png" alt="전구" />
                     </div>
                     <div className="title">
                         <h1>ABOUT US</h1>

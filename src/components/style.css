@@ -2,7 +2,7 @@
 #wrap .container {background: #fff;}
 
 /* MAIN 화면 */
-#main {position: fixed; top: 0; left: 50%; margin-left: -50%; width: 100%; height: 100vh; z-index: -1; background: url('/public/img/main_bg.png') center center no-repeat; background-size: cover; }
+#main {position: fixed; top: 0; left: 50%; margin-left: -50%; width: 100%; height: 100vh; z-index: -1; background: url('/public/images/main_bg.png') center center no-repeat; background-size: cover; }
 #main .cont_wrap {position: fixed; top: 0; justify-content: center; align-items: center; width: 100%; box-sizing: border-box; padding: 18.189vh 0 10.452vh;}
 #main .cont_wrap img{ width: 923px; margin: 0 auto;}
 
@@ -27,7 +27,7 @@
 #ourwork {margin-top: 100vh;}
 #ourwork .cont_wrap {display: block; width: 100%; max-width: 925px; min-height: 1118px; background-color: #fff; padding: 100px 0; margin: 0 auto;}
 #ourwork .cont_wrap .textBox .title {display: flex; justify-content: flex-start; align-items: center; gap: 14px;}
-#ourwork .cont_wrap .textBox .title > .icon {background-image: url('/public/img/ourwork_icon.png');}
+#ourwork .cont_wrap .textBox .title > .icon {background-image: url('/public/images/ourwork_icon.png');}
 
 #ourwork .cont_wrap .contentBox {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 70px 0;  width: 100%; max-width: 925px; margin: 60px 0 64px;} 
 #ourwork .cont_wrap .contentBox > div {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 194px;}
@@ -40,7 +40,7 @@
 #ourwork .cont_wrap .more {display: block; font-size: 16px; font-weight: 400; letter-spacing: -0.025em; line-height: 26px; color: #a1a1a1; margin: 0 auto; text-align: center;}
 
 /* ABOUT US */ 
-#aboutus .cont_wrap { display: block; width: 100%; height: 636px; background: url('/public/img/aboutus_bg.png') center center no-repeat; background-size: cover; padding: 98.1px 0 80.1px;}
+#aboutus .cont_wrap { display: block; width: 100%; height: 636px; background: url('/public/images/aboutus_bg.png') center center no-repeat; background-size: cover; padding: 98.1px 0 80.1px;}
 
 #aboutus .cont_wrap .textBox {position: relative; width: 100%; max-width: 870px; margin: 0 auto;}
 #aboutus .cont_wrap .textBox .light { position: absolute; top: 0; right: 0px; margin-top: -97px;
@@ -58,7 +58,7 @@
 #partner .cont_wrap .textBox > p {padding-top: 8px;}
 #partner .cont_wrap .textBox .title {display: flex;  justify-content: flex-start; align-items: center; gap: 14px;}
 
-#partner .cont_wrap .textBox .title > .icon {background-image: url('/public/img/partner_icon.png');}
+#partner .cont_wrap .textBox .title > .icon {background-image: url('/public//images/partner_icon.png');}
 #partner .cont_wrap .contentBox {width: 925px; margin-top: 46.9px; margin:  0 auto;}
 #partner .cont_wrap .contentBox ul {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%;}
 

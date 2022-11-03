@@ -5,12 +5,12 @@ const Main = () => {
         <div id="main">
             <div className="cont_wrap">
                 <img
-                    src="img/main_visual.gif"
+                    src="images/main_visual.gif"
                     alt="THE HAPPY OF THE DIGITAL WORLD PIT-A-PAT"
                 />
             </div>
             <p className="letsgo">
-                LET'S GO <img src="img/arrow_icon.png" alt="화살표이미지" />
+                LET'S GO <img src="images/arrow_icon.png" alt="화살표이미지" />
             </p>
         </div>
     );

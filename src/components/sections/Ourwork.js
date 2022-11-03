@@ -5,49 +5,49 @@ const Ourwork = ({sections}) => {
     const [works, setWorks] = useState([
         {   
             id:1,
-            img:'img/work1.png',
+            img:'images/work1.png',
             subtext:'MOBILE APP RENEWAL',
             text:'현대해상 굿앤굿'
         },
         {
             id:2,
-            img:'img/work2.png',
+            img:'images/work2.png',
             subtext:'WEBSITE',
             text:'한화생명 온슈어패밀리'
         },
         {
             id:3,
-            img:'img/work3.png',
+            img:'images/work3.png',
             subtext:'MOBILE APP',
             text:'GS건설 자이'
         },
         {
             id:4,
-            img:'img/work4.png',
+            img:'images/work4.png',
             subtext:'BLOG WEBSITE',
             text:'LG디스플레이 블로그'
         },
         {
             id:5,
-            img:'img/work5.png',
+            img:'images/work5.png',
             subtext:'PDP PAGE',
             text:'LG Solar'
         },
         {
             id:6,
-            img:'img/work6.png',
+            img:'images/work6.png',
             subtext:'WEBSITE',
             text:'위닉스'
         },
         {
             id:7,
-            img:'img/work7.png',
+            img:'images/work7.png',
             subtext:'CAMPAIGN WEBSITE',
             text:'허벌라이프 엑스포'
         },
         {
             id:8,
-            img:'img/work8.png',
+            img:'images/work8.png',
             subtext:'WEBSITE',
             text:'LG화학블로그'
         }
@@ -59,25 +59,25 @@ const Ourwork = ({sections}) => {
             const work = [
                 {
                     id:9,
-                    img:'img/work9.png',
+                    img:'images/work9.png',
                     subtext:'WEBSITE',
                     text:'위니월드'
                 },
                 {
                     id:10,
-                    img:'img/work10.png',
+                    img:'images/work10.png',
                     subtext:'WEBSITE',
                     text:'대한예수교장로회총회'
                 },
                 {  
                     id:11,
-                    img:'img/work11.png',
+                    img:'images/work11.png',
                     subtext:'WEBSITE',
                     text:'둘코락스'
                 },
                 {
                     id:12,
-                    img:'img/work12.png',
+                    img:'images/work12.png',
                     subtext:'WEBSITE',
                     text:'경찰박물관'
                 }

@@ -1,5 +1,6 @@
 import React from "react";
-// import MapContainer from "../MapContainer";
+import MapContainer from "../MapContainer";
+
 
 const contacdata = [
     {
@@ -27,7 +28,7 @@ const Contact = ({sections}) => {
         <div id={sections[3]}>
             <div className="cont_wrap">
                 <div className="mapBox">
-                    {/* <MapContainer/> */}
+                    <MapContainer />
                 </div>
                 <div className="contactBox">
                     <div className="co-leftBox">

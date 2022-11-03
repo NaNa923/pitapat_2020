@@ -3,7 +3,7 @@ import React from "react";
 const partners = [1,2,3,4,5,6,7,8,9,10];
 const partnerList = partners.map(partner => 
     <li key={partner}>
-        <img src={`img/partner${partner}.png`} alt={`partner img${partner}`} />
+        <img src={`images/partner${partner}.png`} alt={`partner img${partner}`} />
     </li>
 );
 
