@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import workData from '../../data/workData.json'
+import workData from 'https://nana923.github.io/pitapat_2020/data/workData.json'
 
 const Ourwork = ({sections}) => {
 
@@ -40,7 +40,7 @@ const Ourwork = ({sections}) => {
                     }
                 </div>
                 <button className="more" style={style} onClick={()=>{
-                    axios.get('../../data/workData.json')
+                    axios.get('https://nana923.github.io/pitapat_2020/data/workData.json')
                     .then((result)=>{
                         setWork([...work,...result.data.list1]);
                         setStyle({display: 'none'});
