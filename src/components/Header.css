@@ -6,7 +6,8 @@ header .rightBox {display: flex; justify-content:center; align-items: center; ga
 header .rightBox li {width: auto; height: 39px; text-align: center; font-weight: 600;  line-height: 39px;} 
 header .rightBox li a {color: #fff;} 
 header .rightBox li:last-child {width: 136px; border: 1px solid #fff;} 
-
+header .rightBox li:last-child:hover {background-color: #fff;}
+header .rightBox li:last-child:hover a {color: #161616;}
 header .menuBox {display: none;}
 
 /* ourworK이하부터 검정색 메뉴 */

@@ -22,6 +22,12 @@ const HeaderWrap = styled.div`
     &.colorchange .rightBox li:last-child {
         border:  1px solid #161616;
     }
+    &.colorchange .rightBox li:last-child:hover {
+        background-color: #161616;   
+    }
+    &.colorchange .rightBox li:last-child:hover a {
+        color: #fff;
+    }
 `;
 
 const menu = [

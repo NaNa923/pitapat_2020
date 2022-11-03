@@ -1,4 +1,4 @@
-footer { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 40px 68.3px 40px 70.3px; background: #fff;}
+footer {position: relative; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 40px 68.3px 40px 70.3px; background: #fff;}
 
 footer .leftBox {display: block; font-size: 13px; font-weight: 500; line-height: 16.49px; color:#575757;}
 

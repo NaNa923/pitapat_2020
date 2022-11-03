@@ -1,17 +1,19 @@
-#wrap {position: relative; width: 100%; height: 100%;}
-#wrap .container {position: relative; background: #fff;}
 
-.letsgo { position: absolute; right: 3%;margin-top: -250px; display: flex; gap: 13px; font-family: 'Poppins', sans-serif; font-size: 20px; color: #fff; font-weight: 500; writing-mode: vertical-lr; animation: boxdown 2s infinite alternate;z-index: 1;}
+#wrap .container {margin: 0 auto;position: relative; width: 100%;}
 
 /* MAIN 화면 */
-#main {position: fixed; top: 0; left: 50%; margin-left: -50%; width: 100%; height: 100vh; z-index: -1; background: url('/public/images/main_bg.png') center center no-repeat; background-size: cover; }
-#main .cont_wrap {display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
-#main .cont_wrap img{ width: 100%; max-width: 923px; margin: 0 auto;}
+#main {height: 100vh; position: fixed; top: 0; z-index: 0;}
+#main .cont_wrap {width: 100%;}
+#main .cont_wrap .itemBox {background: url('/public/images/main_bg.png');background-attachment: fixed; background-position: 50%; background-size: cover; height: 100vh; overflow: hidden; position: relative; width: 100vw;}
+#main .cont_wrap .itemBox .poster_image {box-sizing: border-box; padding: 18.189vh 0 10.452vh; position: fixed; top: 0; width: 100%;}
+#main .cont_wrap .itemBox .poster_image .poster_title {width: 923px; margin: 0 auto;}
+#main .cont_wrap .itemBox .poster_image .poster_title img {width: 100%;}
 
 @media screen and (max-width:1920px) {
-    #main .cont_wrap img{max-width: 640px; }
+    #main .cont_wrap .itemBox .poster_image .poster_title {max-width: 640px; }
 }
 
+.letsgo { position: absolute; right: 3%;margin-top: -250px; display: flex; gap: 13px; font-family: 'Poppins', sans-serif; font-size: 20px; color: #fff; font-weight: 500; writing-mode: vertical-lr; animation: boxdown 2s infinite alternate;z-index: 1;}
 
 @keyframes boxdown {
     0% {transform: translateY(80px);}
@@ -22,14 +24,14 @@
 
 
 /* 공통 */
-.cont_wrap .textBox .title { color: #161616;;}
+.cont_wrap .textBox .title { color: #161616;}
 .cont_wrap .textBox .title > .icon {width: 85px; height: 83px; background: center center no-repeat;}
 .cont_wrap .textBox .title  h1 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 62px; line-height: 1;}
 
 .cont_wrap .textBox > p {display: block; padding-top: 23.1px; font-size: 16px; font-weight: 400; letter-spacing: -0.025em; line-height: 26px; margin: 0 auto;}
 
 /* OURWORK */
-#ourwork {margin-top: 100vh;}
+#ourwork { background-color: #fff; height: auto;margin-top: 100vh; min-height: auto; position: relative;}
 #ourwork .cont_wrap {display: block; width: 100%; max-width: 925px; min-height: 1118px; background-color: #fff; padding: 100px 0; margin: 0 auto;}
 #ourwork .cont_wrap .textBox .title {display: flex; justify-content: flex-start; align-items: center; gap: 14px;}
 #ourwork .cont_wrap .textBox .title > .icon {background-image: url('/public/images/ourwork_icon.png');}
@@ -45,6 +47,7 @@
 #ourwork .cont_wrap .more {display: block; font-size: 16px; font-weight: 400; letter-spacing: -0.025em; line-height: 26px; color: #a1a1a1; margin: 0 auto; text-align: center;}
 
 /* ABOUT US */ 
+#aboutus {height: 100%;margin: 0 auto;position: relative; width: 100%; z-index: 1;}
 #aboutus .cont_wrap { display: block; width: 100%; height: 636px; background: url('/public/images/aboutus_bg.png') center center no-repeat; background-size: cover; padding: 98.1px 0 80.1px;}
 
 #aboutus .cont_wrap .textBox {position: relative; width: 100%; max-width: 870px; margin: 0 auto;}
@@ -58,7 +61,8 @@
 
 
 /* PARTNER */
-#partner .cont_wrap {display: block; width: 100%; height: 657px; background-color: #fff; padding: 100px 0; }
+#partner {background: #fff; height: 100%; padding: 100px 0; position: relative; width: 100%;z-index: 1;}
+#partner .cont_wrap {display: block; width: 100%;}
 #partner .cont_wrap .textBox  {max-width: 870px; margin: 0 auto 51px;}
 #partner .cont_wrap .textBox > p {padding-top: 8px;}
 #partner .cont_wrap .textBox .title {display: flex;  justify-content: flex-start; align-items: center; gap: 14px;}
