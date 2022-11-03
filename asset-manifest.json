@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pitapat_2020/static/css/main.af2980a8.css",
-    "main.js": "/pitapat_2020/static/js/main.5e220cff.js",
+    "main.css": "/pitapat_2020/static/css/main.13ce9f22.css",
+    "main.js": "/pitapat_2020/static/js/main.80cbb521.js",
     "static/js/787.f1d005a2.chunk.js": "/pitapat_2020/static/js/787.f1d005a2.chunk.js",
     "static/media/aboutus_bg.png": "/pitapat_2020/static/media/aboutus_bg.e6f47f607e3ae84d46db.png",
     "static/media/main_bg.png": "/pitapat_2020/static/media/main_bg.643bf198a830c43a4ddf.png",
     "index.html": "/pitapat_2020/index.html",
-    "main.af2980a8.css.map": "/pitapat_2020/static/css/main.af2980a8.css.map",
-    "main.5e220cff.js.map": "/pitapat_2020/static/js/main.5e220cff.js.map",
+    "main.13ce9f22.css.map": "/pitapat_2020/static/css/main.13ce9f22.css.map",
+    "main.80cbb521.js.map": "/pitapat_2020/static/js/main.80cbb521.js.map",
     "787.f1d005a2.chunk.js.map": "/pitapat_2020/static/js/787.f1d005a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af2980a8.css",
-    "static/js/main.5e220cff.js"
+    "static/css/main.13ce9f22.css",
+    "static/js/main.80cbb521.js"
   ]
 }
