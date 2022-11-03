@@ -51,7 +51,7 @@
 #aboutus .cont_wrap { display: block; width: 100%; height: 636px; background: url('/public/images/aboutus_bg.png') center center no-repeat; background-size: cover; padding: 98.1px 0 80.1px;}
 
 #aboutus .cont_wrap .textBox {position: relative; width: 100%; max-width: 870px; margin: 0 auto;}
-#aboutus .cont_wrap .textBox .light { position: absolute; top: 0; right: 0px; margin-top: -97px;
+#aboutus .cont_wrap .textBox .light { position: absolute; top: 0; right: 0px; margin-top: -30px;
  margin-right: -93px; width: 384px; height: 350px;}
 #aboutus .cont_wrap .textBox .light img {display: block; width: 100%; height: 100%;}
 
