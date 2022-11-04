@@ -67,10 +67,10 @@ const Header = ({scrollToTop}) => {
         const { pageYOffset } = window;
         const deltaY = pageYOffset - pageY; // 스크롤 움직인 값
         const hide = pageYOffset !== 0 && deltaY >= 0; // 스크롤 움직인 값이 0이상이고 스크롤위치가 0이 아니면 숨기기
-        const colorchange = pageYOffset > 1200; // 145이상으로 내려가면 colorchange
+        const colorchange = pageYOffset > 900; // 145이상으로 내려가면 colorchange
 
         setHide(hide); // hide값 true, false설정
-        setPageY(pageYOffset); // 현재의 페이지scroll값 저장
+        setPageY(pageYOffset); // 현재의 페이지 scroll값 저장
         setColorchange(colorchange); // colorchange값 true, false설정
     };
 
