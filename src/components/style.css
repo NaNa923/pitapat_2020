@@ -52,7 +52,13 @@
 
 #aboutus .cont_wrap .textBox {position: relative; width: 100%; max-width: 870px; margin: 0 auto;}
 #aboutus .cont_wrap .textBox .light { position: absolute; top: 0; right: 0px; margin-top: -30px;
- margin-right: -93px; width: 384px; height: 350px;}
+margin-right: -93px; width: 384px; height: 350px; transition: all 1s;}
+
+#aboutus .cont_wrap .textBox .light.motion_up {top: -15px;}
+#aboutus .cont_wrap .textBox .light.motion_down {top: 15px;}
+
+
+
 #aboutus .cont_wrap .textBox .light img {display: block; width: 100%; height: 100%;}
 
 #aboutus .cont_wrap .textBox .title > h1 {font-size: 36px; line-height: 31.52px; margin-bottom: 25.4px;}

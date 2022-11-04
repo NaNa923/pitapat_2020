@@ -43,35 +43,23 @@ const menuList = menu.map((menu, index) => (
     </li>
 ));
 
-//throttle : 이벤트가 발생하고서 일정 주기마다 이벤트가 발생되도록 함 
-//(너무 빠르게 scroll이벤트가 발생하는것 방지)
-const throttle = function (callback, waitTime) {
-    let timerId = null;
-    return (e) => {
-        if (timerId) return;
-        timerId = setTimeout(() => {
-            callback.call(this, e);
-            timerId = null;
-        }, waitTime);
-    };
-};
-
-const Header = ({scrollToTop}) => {
+const Header = ({scrollToTop, throttle}) => {
 
     const [hide, setHide] = useState(false);
     const [colorchange, setColorchange] = useState(false);
     const [pageY, setPageY] = useState(0);
     const documentRef = useRef(document);
 
+
     const handleScroll = () => {
         const { pageYOffset } = window;
         const deltaY = pageYOffset - pageY; // 스크롤 움직인 값
         const hide = pageYOffset !== 0 && deltaY >= 0; // 스크롤 움직인 값이 0이상이고 스크롤위치가 0이 아니면 숨기기
-        const colorchange = pageYOffset > 900; // 145이상으로 내려가면 colorchange
+        const colorchange = pageYOffset > 900; // 900이상 내려가면 colorchanges
 
         setHide(hide); // hide값 true, false설정
         setPageY(pageYOffset); // 현재의 페이지 scroll값 저장
-        setColorchange(colorchange); // colorchange값 true, false설정
+        setColorchange(colorchange); // colorchange값 true, false설정;
     };
 
     const throttleScroll = throttle(handleScroll, 50);

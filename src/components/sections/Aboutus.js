@@ -1,11 +1,43 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-const Aboutus = ({sections}) => {
+
+const Aboutus = ({sections, throttle}) => {
+    const [pageY,setPageY] = useState(0);
+    const [motion, setMotion] = useState(false);
+    const documentRef = useRef(document);
+
+    const motionScroll = () => {
+        const { pageYOffset } = window;
+        const deltaY = pageYOffset - pageY; // 스크롤 움직인 값
+        if(pageYOffset > 1500 && pageYOffset < 2800) {
+            if(deltaY>=0) {
+                //console.log('아래로 스크롤');
+                setMotion(true);
+            }
+            else {
+                //console.log('위로 스크롤');
+                setMotion(false);
+            }
+        }
+        setPageY(pageYOffset); // 현재의 페이지 scroll값 저장
+    }
+
+  
+ 
+    
+    const throttleScroll = throttle(motionScroll, 50);
+
+    useEffect(() => {
+        documentRef.current.addEventListener('scroll', throttleScroll);
+        return () => documentRef.current.removeEventListener('scroll', throttleScroll);
+    }, [pageY]);
+
+
     return (
         <div id={sections[1]} className="element" name="section2">
             <div className="cont_wrap">
                 <div className="textBox">
-                    <div className="light">
+                    <div className={"light " + (motion ? 'motion_down' : 'motion_up')}>
                         <img src="images/light.png" alt="전구" />
                     </div>
                     <div className="title">
