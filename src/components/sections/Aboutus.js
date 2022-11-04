@@ -8,15 +8,15 @@ const Aboutus = ({sections, throttle}) => {
 
     const motionScroll = () => {
         const { pageYOffset } = window;
-        const deltaY = pageYOffset - pageY; // 스크롤 움직인 값
+        const deltaY = pageYOffset - pageY; // 현재 스크롤값 - 윈도우스크롤값 움
         if(pageYOffset > 1500 && pageYOffset < 2800) {
             if(deltaY>=0) {
                 //console.log('아래로 스크롤');
-                setMotion(true);
+                setMotion(true); // 아래로 스크롤시 true값 motion_down 클래스 추가
             }
             else {
                 //console.log('위로 스크롤');
-                setMotion(false);
+                setMotion(false);// 위로 스크롤시 false값 motion_up z클래스 추가
             }
         }
         setPageY(pageYOffset); // 현재의 페이지 scroll값 저장
@@ -37,9 +37,6 @@ const Aboutus = ({sections, throttle}) => {
         <div id={sections[1]} className="element" name="section2">
             <div className="cont_wrap">
                 <div className="textBox">
-                    <div className={"light " + (motion ? 'motion_down' : 'motion_up')}>
-                        <img src="images/light.png" alt="전구" />
-                    </div>
                     <div className="title">
                         <h1>ABOUT US</h1>
                         <p>
@@ -63,6 +60,9 @@ const Aboutus = ({sections, throttle}) => {
                         <br />
                         성공하는 프로젝트를 만들어 가겠습니다.
                     </p>
+                    <div className={"light " + (motion ? 'motion_down' : 'motion_up')}>
+                        <img src="images/light.png" alt="전구" />
+                    </div>
                 </div>
             </div>
         </div>
