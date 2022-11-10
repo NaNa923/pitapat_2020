@@ -121,13 +121,13 @@ margin-right: -93px; width: 384px; height: 350px; transition: all 1s;}
     #ourwork .cont_wrap .textBox .title > .icon {width: 13.06vw; height: 13.06vw;}
     #ourwork .cont_wrap .more {width: 100%; height: 12.27vw; border: 1px solid #A1A1A1; font-size: 4vw; line-height: 12.27vw; }
 
-    #aboutus .cont_wrap {height: auto; }
+    #aboutus .cont_wrap {height: auto; background: url('/public/images/mo/aboutus_bg.png') center center no-repeat; background-size: cover;}
     #aboutus .cont_wrap .textBox {max-width: 100%;}
-    #aboutus .cont_wrap .textBox .title > h1 {font-size: 5.33vw; line-height: 4.53vw; margin-bottom: 3.44vw;}
-    #aboutus .cont_wrap .textBox .title > p {font-size: 9vw; line-height: 11.73vw; margin-bottom: 2.24vw;}
+    #aboutus .cont_wrap .textBox .title > h1 {font-size: 5vw; line-height: 4vw; margin-bottom: 3.44vw;}
+    #aboutus .cont_wrap .textBox .title > p {font-size: 8vw; line-height: 9.73vw; margin-bottom: 2.24vw;}
     #aboutus .cont_wrap .textBox > p {padding-top: 0;}
-    #aboutus .cont_wrap .textBox > p > br:nth-child(2) {display: none;}
-    #aboutus .cont_wrap .textBox .light {position: relative;}
+    #aboutus .cont_wrap .textBox > p > br {display: none;}
+    #aboutus .cont_wrap .textBox .light {position: relative; width: 45.66vw; height: 38.66vw;}
 
     #partner .cont_wrap .contentBox {width: 100%;}
     #partner .cont_wrap .contentBox ul {justify-content: flex-start; }
