@@ -130,8 +130,13 @@ margin-right: -93px; width: 384px; height: 350px; transition: all 1s;}
     #aboutus .cont_wrap .textBox .light {position: relative;}
 
     #partner .cont_wrap .contentBox {width: 100%;}
+    #partner .cont_wrap .contentBox ul {justify-content: flex-start; }
+    #partner .cont_wrap .contentBox ul li {width: 33%; height: auto;}
+    #partner .cont_wrap .contentBox ul li img {width: 100%}
 
-    #contact .cont_wrap {display: block; width: 100vw; height: auto;}
 
-
+    #contact {position: relative; width: 100%; height: 100%; background: #fff;}
+    #contact .cont_wrap {display: block; width: 100vw; height: auto; padding: 0;}
+    #contact .cont_wrap .mapBox,
+    #contact .cont_wrap .contactBox{width: 100%;}
 }
