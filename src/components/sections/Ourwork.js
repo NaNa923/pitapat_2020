@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import workData from 'data/workData.json'
 
 
-const Ourwork = ({sections}) => {
+const Ourwork = ({sections,innerWidth}) => {
 
     let [style,setStyle] = useState({display:''});
-    let [work,setWork] = useState(workData.list3);
-    let clickCnt = 0;
-    
+    let [work,setWork] = useState(workData.list3); 
+    let [firstClick,setFirstClick] = useState(true); 
+    useEffect(() => {
+        if(innerWidth >= 870){
+            setWork(work.concat(workData.list2));// 배열 합치기
+        }
+    },[])
+
     return (
         <div id={sections[0]} className="element" name="section1">
             <div className="cont_wrap">
@@ -42,11 +47,27 @@ const Ourwork = ({sections}) => {
                     }
                 </div>
                 <button className="more" style={style} onClick={()=>{
-
                     axios.get('http://nana923.github.io/pitapat_2020/data/workData.json')
-                    .then((result)=>{     
-                        setWork([...work,...result.data.list1]);  
-                        setStyle({'display':'none'});
+                    .then((result)=>{
+                        if(innerWidth > 870) {                          
+                            setWork([...work,...result.data.list1]);  
+                            setStyle({'display':'none'});
+                        }
+                        else{    
+                            handleClickCount(true, trueAdd, falseAdd);   
+                        } 
+                        function handleClickCount() {
+                            firstClick ? trueAdd() : falseAdd();       
+                        }
+
+                        function trueAdd() {
+                            setWork([...work,...result.data.list2]);  
+                            setFirstClick(false);  
+                        }
+                        function falseAdd() {
+                            setWork([...work,...result.data.list1]);
+                            setStyle({'display':'none'});  
+                        }
                     })
                     .catch(()=>{
                         console.log('실패');

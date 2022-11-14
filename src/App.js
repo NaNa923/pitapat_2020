@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './App.css';
 import 'components/style.css';
 import Footer from "components/Footer";
@@ -25,6 +25,16 @@ const throttle = function (callback, waitTime) {
 
 
 function App() {
+
+    const [innerWidth,setInnerWidth] = useState(window.innerWidth);
+     
+    useEffect(() => {
+        window.onresize = function() {
+            setInnerWidth(window.innerWidth);
+        };
+    },[])
+   
+
     // 메인로고버튼,top버튼누르면 맨위로 올라가게하는 함수
     const scrollToTop = () => {
         window.scrollTo({
@@ -41,7 +51,7 @@ function App() {
             <div id="wrap">
                 <div className="container">          
                     <Main /> 
-                    <Ourwork sections={sections}/>
+                    <Ourwork sections={sections} innerWidth={innerWidth}/>
                     <Aboutus sections={sections} throttle={throttle}/>
                     <Partner sections={sections}/>
                     <Contact sections={sections}/>
