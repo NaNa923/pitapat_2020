@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import workData from '../../data/workData.json'
+import workData from 'data/workData.json'
 
 const Ourwork = ({sections}) => {
 

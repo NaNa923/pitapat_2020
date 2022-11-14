@@ -1,13 +1,13 @@
 import React from "react";
 import './App.css';
-import './components/style.css';
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Aboutus from "./components/sections/Aboutus";
-import Contact from "./components/sections/Contact";
-import Main from "./components/sections/Main";
-import Ourwork from "./components/sections/Ourwork";
-import Partner from "./components/sections/Partner";
+import 'components/style.css';
+import Footer from "components/Footer";
+import Header from "components/Header";
+import Aboutus from "components/sections/Aboutus";
+import Contact from "components/sections/Contact";
+import Main from "components/sections/Main";
+import Ourwork from "components/sections/Ourwork";
+import Partner from "components/sections/Partner";
 
 
 //throttle : 이벤트가 발생하고서 일정 주기마다 이벤트가 발생되도록 함 

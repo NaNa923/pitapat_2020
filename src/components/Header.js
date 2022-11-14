@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./Header.css";
+import "components/Header.css";
 
 import { Link, Element as scroll} from 'react-scroll';
 
