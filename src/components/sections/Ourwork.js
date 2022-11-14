@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import axios from "axios";
 import workData from 'data/workData.json'
 
+
 const Ourwork = ({sections}) => {
 
     let [style,setStyle] = useState({display:''});
-    let [work,setWork] = useState(workData.list2);
+    let [work,setWork] = useState(workData.list3);
+    let clickCnt = 0;
     
     return (
         <div id={sections[0]} className="element" name="section1">
@@ -28,8 +30,8 @@ const Ourwork = ({sections}) => {
                     {
                         work.map(function(name, index) {
                             return(
-                                <div className={`works work_${index+1}`} key={index+1}>
-                                    <img src={"https://nana923.github.io/pitapat_2020/images/work"+(name.id)+".png"} alt={name.title}/>
+                                <div className={`works work_${name.id}`} key={index+1}>
+                                    <img src={" https://nana923.github.io/pitapat_2020/images/work"+(name.id)+".png"} alt={name.title}/>
                                     <div className="workText">
                                         <p className="subtext">{name.category}</p>
                                         <p className="text">{name.title}</p>
@@ -40,10 +42,11 @@ const Ourwork = ({sections}) => {
                     }
                 </div>
                 <button className="more" style={style} onClick={()=>{
+
                     axios.get('http://nana923.github.io/pitapat_2020/data/workData.json')
                     .then((result)=>{     
                         setWork([...work,...result.data.list1]);  
-                        setStyle({display: 'none'});
+                        setStyle({'display':'none'});
                     })
                     .catch(()=>{
                         console.log('실패');
