@@ -29,7 +29,7 @@ const Ourwork = ({sections}) => {
                         work.map(function(name, index) {
                             return(
                                 <div className={`works work_${index+1}`} key={index+1}>
-                                    <img src={"images/work"+(name.id)+".png"} alt={name.title}/>
+                                    <img src={"https://nana923.github.io/pitapat_2020/images/work"+(name.id)+".png"} alt={name.title}/>
                                     <div className="workText">
                                         <p className="subtext">{name.category}</p>
                                         <p className="text">{name.title}</p>

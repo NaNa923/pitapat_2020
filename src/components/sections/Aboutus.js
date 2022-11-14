@@ -61,7 +61,7 @@ const Aboutus = ({sections, throttle}) => {
                         성공하는 프로젝트를 만들어 가겠습니다.
                     </p>
                     <div className={"light " + (motion ? 'motion_down' : 'motion_up')}>
-                        <img src="images/light.png" alt="전구" />
+                        <img src="https://nana923.github.io/pitapat_2020/images/light.png" alt="전구" />
                     </div>
                 </div>
             </div>

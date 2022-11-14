@@ -9,7 +9,7 @@ header .headerWrap.colorchange .rightBox li:last-child {border:  1px solid #1616
 header .headerWrap.colorchange .rightBox li:last-child:hover { background-color: #161616;}
 header .headerWrap.colorchange .rightBox li:last-child:hover a {color: #fff;}
 
-header .logo {width: 208px; height: 145px; background:url('/public/images/logo.png') center center no-repeat;}
+header .logo {width: 208px; height: 145px; background:url('https://nana923.github.io/pitapat_2020/images/logo.png') center center no-repeat;}
 
 header .rightBox {display: flex; justify-content:center; align-items: center; gap: 48.7px;} 
 header .rightBox li {width: auto; height: 39px; text-align: center; font-weight: 600;  line-height: 39px;} 
@@ -28,7 +28,7 @@ header .rightBox.active li:last-child {border: 1px solid #161616;}
     header.on {height: 100vh};    
 
     header .headerWrap {width: 100vw;}
-    header .logo {width: 192px; height: 101px; background:url('/public/images/logo_870.png') center center no-repeat; z-index: 99;}
+    header .logo {width: 192px; height: 101px; background:url('https://nana923.github.io/pitapat_2020/images/logo_870.png') center center no-repeat; z-index: 99;}
 
     header .rightBox{ position: fixed; top: 0; display: none;flex-direction: column; width: 100vw;height: 100%; color: #fff; background: #161616;  font-size: 7.2vw; line-height: 10vw;}
     header.on .rightBox { display: flex;}
@@ -36,7 +36,7 @@ header .rightBox.active li:last-child {border: 1px solid #161616;}
     header .rightBox li:last-child {border: none; width: auto}
 
     header .menuBox {display: flex; justify-content: center; align-items: center; width: 101px; height: 101px; background-color: #161616; }
-    header .menuBox .menuIcon {display: block; width: 38px; height: 34px; background:url('/public/images/menu_ico.png') center center no-repeat; }
+    header .menuBox .menuIcon {display: block; width: 38px; height: 34px; background:url('https://nana923.github.io/pitapat_2020/images/menu_ico.png') center center no-repeat; }
 
-    header.on .menuBox .menuIcon {display: block; width: 38px; height: 34px; background:url('/public/images/menu_close_ico.png') center center no-repeat; z-index: 99; }
+    header.on .menuBox .menuIcon {display: block; width: 38px; height: 34px; background:url('https://nana923.github.io/pitapat_2020/images/menu_close_ico.png') center center no-repeat; z-index: 99; }
 }

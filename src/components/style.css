@@ -4,7 +4,7 @@
 /* MAIN 화면 */
 #main {height: 100vh; position: fixed; top: 0; z-index: 0;}
 #main .cont_wrap {width: 100%;}
-#main .cont_wrap .itemBox {background: url('/public/images/main_bg.png');background-attachment: fixed; background-position: 50%; background-size: cover; height: 100vh; overflow: hidden; position: relative; width: 100vw;}
+#main .cont_wrap .itemBox {background: url('https://nana923.github.io/pitapat_2020/images/main_bg.png');background-attachment: fixed; background-position: 50%; background-size: cover; height: 100vh; overflow: hidden; position: relative; width: 100vw;}
 #main .cont_wrap .itemBox .poster_image {box-sizing: border-box; padding: 18.189vh 0 10.452vh; position: fixed; top: 0; width: 100%;}
 #main .cont_wrap .itemBox .poster_image .poster_title {width: 923px; margin: 0 auto;}
 #main .cont_wrap .itemBox .poster_image .poster_title img {width: 100%;}
@@ -29,7 +29,7 @@
 #ourwork { background-color: #fff; height: auto;margin-top: 100vh; min-height: auto; position: relative;}
 #ourwork .cont_wrap {display: block; width: 100%; max-width: 925px; min-height: 1118px; background-color: #fff; padding: 100px 0; margin: 0 auto;}
 #ourwork .cont_wrap .textBox .title {display: flex; justify-content: flex-start; align-items: center; gap: 14px;}
-#ourwork .cont_wrap .textBox .title > .icon {background-image: url('/public/images/ourwork_icon.png');}
+#ourwork .cont_wrap .textBox .title > .icon {background-image: url('https://nana923.github.io/pitapat_2020/images/ourwork_icon.png');}
 
 #ourwork .cont_wrap .contentBox {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 70px 0;  width: 100%; max-width: 925px; margin: 60px 0 64px;} 
 #ourwork .cont_wrap .contentBox > div {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 194px;}
@@ -43,7 +43,7 @@
 
 /* ABOUT US */ 
 #aboutus {height: 100%;margin: 0 auto;position: relative; width: 100%; z-index: 1;}
-#aboutus .cont_wrap { display: block; width: 100%; height: 636px; background: url('/public/images/aboutus_bg.png') center center no-repeat; background-size: cover; padding: 98.1px 0 80.1px;}
+#aboutus .cont_wrap { display: block; width: 100%; height: 636px; background: url('https://nana923.github.io/pitapat_2020/images/aboutus_bg.png') center center no-repeat; background-size: cover; padding: 98.1px 0 80.1px;}
 
 #aboutus .cont_wrap .textBox {position: relative; width: 100%; max-width: 870px; margin: 0 auto;}
 #aboutus .cont_wrap .textBox .light { position: absolute; top: 0; right: 0px; margin-top: -30px;
@@ -121,7 +121,7 @@ margin-right: -93px; width: 384px; height: 350px; transition: all 1s;}
     #ourwork .cont_wrap .textBox .title > .icon {width: 13.06vw; height: 13.06vw;}
     #ourwork .cont_wrap .more {width: 100%; height: 12.27vw; border: 1px solid #A1A1A1; font-size: 4vw; line-height: 12.27vw; }
 
-    #aboutus .cont_wrap {height: auto; background: url('/public/images/mo/aboutus_bg.png') center center no-repeat; background-size: cover;}
+    #aboutus .cont_wrap {height: auto; background: url('https://nana923.github.io/pitapat_2020/images/mo/aboutus_bg.png') center center no-repeat; background-size: cover;}
     #aboutus .cont_wrap .textBox {max-width: 100%;}
     #aboutus .cont_wrap .textBox .title > h1 {font-size: 5vw; line-height: 4vw; margin-bottom: 3.44vw;}
     #aboutus .cont_wrap .textBox .title > p {font-size: 8vw; line-height: 9.73vw; margin-bottom: 2.24vw;}
