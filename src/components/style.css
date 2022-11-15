@@ -128,22 +128,30 @@ margin-right: -93px; width: 384px; height: 350px; transition: all 1s;}
     #ourwork .cont_wrap .contentBox > div > .workText .subtext{font-size: 2.5vw;}
     #ourwork .cont_wrap .contentBox > div > .workText .text{font-size: 3vw;}
 
-    #aboutus .cont_wrap {height: auto; background: url('https://nana923.github.io/pitapat_2020/images/mo/aboutus_bg.png') center center no-repeat; background-size: cover;}
+    #aboutus .cont_wrap {height: 170vw; background: url('https://nana923.github.io/pitapat_2020/images/mo/aboutus_bg.png') center center no-repeat; background-size: cover;}
     #aboutus .cont_wrap .textBox {max-width: 100%;}
-    #aboutus .cont_wrap .textBox .title > h1 {font-size: 5vw; line-height: 4vw; margin-bottom: 3.44vw;}
-    #aboutus .cont_wrap .textBox .title > p {font-size: 8vw; line-height: 9.73vw; margin-bottom: 2.24vw;}
+    #aboutus .cont_wrap .textBox .title > h1 {font-size: 6vw; line-height: 5vw; margin-bottom: 6.44vw;}
+    #aboutus .cont_wrap .textBox .title > p {font-size: 9vw; line-height: 10.73vw; margin-bottom: 4.24vw;}
     #aboutus .cont_wrap .textBox > p {padding-top: 0;}
     #aboutus .cont_wrap .textBox > p > br {display: none;}
-    #aboutus .cont_wrap .textBox .light {position: relative; width: 45.66vw; height: 38.66vw;}
+    #aboutus .cont_wrap .textBox .light {position: relative; width: 45.66vw; height: 38.66vw; margin-left: 17vw; margin-top: 0vw;}
+    #aboutus .cont_wrap .textBox .light.motion_up {top: 0px;}
+    #aboutus .cont_wrap .textBox .light.motion_down {top: 0px;}
 
+    #partner {padding: 0;}
     #partner .cont_wrap .contentBox {width: 100%;}
     #partner .cont_wrap .contentBox ul {justify-content: flex-start; }
-    #partner .cont_wrap .contentBox ul li {width: 33%; height: auto;}
+    #partner .cont_wrap .contentBox ul li {width: 33%; height: auto; padding:7vw 4vw;}
     #partner .cont_wrap .contentBox ul li img {width: 100%}
 
 
     #contact {position: relative; width: 100%; height: 100%; background: #fff;}
-    #contact .cont_wrap {display: block; width: 100vw; height: auto; padding: 0;}
+    #contact .cont_wrap {display: flex; flex-direction: column-reverse; width: 100vw; height: auto; padding: 0;}
     #contact .cont_wrap .mapBox,
-    #contact .cont_wrap .contactBox{width: 100%;}
+    #contact .cont_wrap .contactBox{ width: 100%;}
+    #contact .cont_wrap .contactBox {flex-direction: column; justify-content: center; align-items: center; gap: 2vw; padding: 10.67vw; padding-bottom: 34vw;}
+    #contact .cont_wrap .contactBox .co-leftBox {}
+    #contact .cont_wrap .contactBox .co-leftBox >h1 {font-size: 11vw;font-weight: 600; margin-bottom: 4.8vw;}
+    #contact .cont_wrap .contactBox .co-leftBox >a {position: absolute; top: 98.67vw;}
+    #contact .cont_wrap .contactBox .co-rightBox {padding: 0vw;}
 }
