@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pitapat_2020/static/css/main.87e18921.css",
+    "main.css": "/pitapat_2020/static/css/main.d5284155.css",
     "main.js": "/pitapat_2020/static/js/main.e6d7aa3b.js",
     "static/js/787.f1d005a2.chunk.js": "/pitapat_2020/static/js/787.f1d005a2.chunk.js",
     "index.html": "/pitapat_2020/index.html",
-    "main.87e18921.css.map": "/pitapat_2020/static/css/main.87e18921.css.map",
+    "main.d5284155.css.map": "/pitapat_2020/static/css/main.d5284155.css.map",
     "main.e6d7aa3b.js.map": "/pitapat_2020/static/js/main.e6d7aa3b.js.map",
     "787.f1d005a2.chunk.js.map": "/pitapat_2020/static/js/787.f1d005a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87e18921.css",
+    "static/css/main.d5284155.css",
     "static/js/main.e6d7aa3b.js"
   ]
 }
