@@ -28,15 +28,15 @@ header .rightBox.active li:last-child {border: 1px solid #161616;}
     header.on {height: 100vh};    
 
     header .headerWrap {width: 100vw;}
-    header .logo {width: 37vw; height: 18vw; background:url('https://nana923.github.io/pitapat_2020/images/logo_870.png') center center no-repeat; background-size: cover; z-index: 99;}
+    header .logo {width: 25vw; height: 13vw; background:url('https://nana923.github.io/pitapat_2020/images/logo_870.png') center center no-repeat; background-size: cover; z-index: 999;}
 
     header .rightBox{ position: fixed; top: 0; display: none;flex-direction: column; width: 100vw;height: 100%; color: #fff; background: #161616; font-size: 7.2vw; line-height: 10vw;}
-    header.on .rightBox { display: flex;}
-    header .rightBox li {height: auto; line-height: 1;}
+    header.on .rightBox { display: flex; z-index: 99;}
+    header .rightBox li {height: auto; line-height: 1; }
     header .rightBox li:last-child {border: none; width: auto}
 
-    header .menuBox {display: flex; justify-content: center; align-items: center; width: 18vw; height: 18vw; background-color: #161616; }
-    header .menuBox .menuIcon {display: block; width: 9vw; height: 9vw; background:url('https://nana923.github.io/pitapat_2020/images/menu_ico.png') center center no-repeat; }
+    header .menuBox {display: flex; justify-content: center; align-items: center; width: 13vw; height: 13vw; background-color: #161616; }
+    header .menuBox .menuIcon {display: block; width: 5vw; height: 5vw; background:url('https://nana923.github.io/pitapat_2020/images/menu_ico.png') center center no-repeat; background-size: contain; }
 
-    header.on .menuBox .menuIcon {display: block; width: 38px; height: 34px; background:url('https://nana923.github.io/pitapat_2020/images/menu_close_ico.png') center center no-repeat; z-index: 99; }
+    header.on .menuBox .menuIcon {display: block; width: 5vw; height: 5vw; background:url('https://nana923.github.io/pitapat_2020/images/menu_close_ico.png') center center no-repeat; background-size: contain; z-index: 99; }
 }
